@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>CreateNugetPackage</id>
+    <version>1.0.0</version>
+    <title>CreateNugetPackage</title>
+    <authors>Test</authors>
+    <owners>Test</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+	Create nuget package on build project with 'CreateNuget' configuration. Please try not to edit files inside Script folder. Specify nuget server path and api key inside Settings.xml in CreateNuget folder.For publishing package execute command 'Publish-Package -source "Nuget server path" -apiKey "api key"' on Package manager console where source and apiKey parameters are optional if you don't provide it will take from Settings.xml. Edit .nuspec file inside 'CreateNuget' for your project.
+	</description>
+    <dependencies>
+
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="content\**" target="content"/>
+    <file src="tools\**\*.*" target="tools" />
+    <file src="readme.txt" target="readme.txt" />
+  </files>
+</package>

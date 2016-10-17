@@ -1,0 +1,3 @@
+Create nuget package on build project with 'CreateNuget' configuration. Please try not to edit files inside Script folder. Specify nuget server path and api key inside Settings.xml in CreateNuget folder.For publishing package execute command 'Publish-Package -source "Nuget server path" -apiKey "api key"' on Package manager console where source and apiKey parameters are optional if you don't provide it will take from Settings.xml. Edit .nuspec file inside 'CreateNuget' for your project.
+
+1.0.0 Initial version
